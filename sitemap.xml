@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zcy2875634712.github.io/posts/%E9%80%9F%E6%9F%A5/</loc>
-  </url><url>
     <loc>https://zcy2875634712.github.io/categories/</loc>
-  </url><url>
-    <loc>https://zcy2875634712.github.io/</loc>
   </url><url>
     <loc>https://zcy2875634712.github.io/posts/</loc>
   </url><url>
+    <loc>https://zcy2875634712.github.io/tags/python/</loc>
+  </url><url>
+    <loc>https://zcy2875634712.github.io/categories/python/</loc>
+  </url><url>
+    <loc>https://zcy2875634712.github.io/posts/%E9%80%9F%E6%9F%A5/</loc>
+  </url><url>
     <loc>https://zcy2875634712.github.io/tags/</loc>
+  </url><url>
+    <loc>https://zcy2875634712.github.io/</loc>
   </url>
 </urlset>
