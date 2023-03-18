@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: zcy2875634712.github.io/sitemap.xml
+Sitemap: https://zcy2875634712.github.io/sitemap.xml
