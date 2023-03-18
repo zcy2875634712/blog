@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://zcy2875634712.github.io/posts/%E9%80%9F%E6%9F%A5/</loc>
   </url><url>
-    <loc>/posts/%E9%80%9F%E6%9F%A5/</loc>
+    <loc>https://zcy2875634712.github.io/categories/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://zcy2875634712.github.io/</loc>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>https://zcy2875634712.github.io/posts/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://zcy2875634712.github.io/tags/</loc>
   </url>
 </urlset>
