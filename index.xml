@@ -12,15 +12,6 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://zcy2875634712.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://zcy2875634712.github.io/posts/note/c/%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/note/c/%E6%96%87%E4%BB%B6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://zcy2875634712.github.io/posts/note/go/%E9%80%9F%E6%9F%A5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -39,15 +30,6 @@ goCopy codeconst pi = 3.14 const ( monday = &amp;#34;Monday&amp;#34; tuesday = &
       <guid>https://zcy2875634712.github.io/posts/note/linux/linux%E5%91%BD%E4%BB%A4/</guid>
       <description>tar 解压tar -xvf filename
 压缩tar -zcvf filename.tar.gz filename</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zcy2875634712.github.io/posts/note/linux/ncurses/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/note/linux/ncurses/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -332,7 +314,8 @@ Mo&amp;rsquo;s Blog at GitHub
       
       <guid>https://zcy2875634712.github.io/posts/note/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%8E%9F%E6%9D%A5%E8%BF%99%E5%B0%B1%E6%98%AF%E7%BD%91%E7%BB%9C/</guid>
       <description>原文：https://www.cnblogs.com/flashsun/p/14266148.html
-家庭网络 分组交换 分组交换：在通信过程中，通信双方以分组为单位、使用存储-转发机制实现数据交互的通信方式
+家庭网络 分组交换
+分组交换：在通信过程中，通信双方以分组为单位、使用存储-转发机制实现数据交互的通信方式
 分组：由一块用户数据和必要的地址和管理信息组成，保证网络能够将数据传递到目标。类似于从邮局发送的包裹上注明的地址一样,只有提供给网络这些信息，网络（邮局）才能把分组（包裹）往正确的地址传送</description>
     </item>
     
