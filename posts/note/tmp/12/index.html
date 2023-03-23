@@ -1,0 +1,276 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>ybyb</title><meta name=keywords content><meta name=description content="复习笔记 一、估算软件规模 软件项目管理先于任何技术活动之前开始，并且贯穿于软件的整个生命 周期之中，而制定计划的基础是工作量估算和完成期限估算。 1 代码行技术 （1）定义 代码行技术依据以往开发类似产品的经验和历史数据，估计实现一个功 能所需要的源程序行数。 （2）方法 ① 每名工程师估计程序的最小规模（a）、最大规模（b）和最可能的规 模（m），分别算出这3种规模的平均值后，再用下式计算程序规模的 估计值： （13.1） ② 程序较小时用的单位是代码行数（LOC）；程序较大时用的单位是千 行代码数（KLOC）。（3）优点 ① 代码是所有软件开发项目都有的“产品”，而且很容易计算代码行数。 ② 有以往开发类似产品的历史数据可参考时，估计出的数值比较准确。 （4）缺点 ① 源程序仅是软件配置的一个成分，用它的规模代表整个软件的规模不 太合理。 ② 用不同语言实现同一个软件所需要的代码行数并不相同。 ③ 不适用于非过程语言。 2 功能点技术 （1）特点 ① 功能点技术依据对软件信息域特性和软件复杂性的评估结果，估算软 件规模。 ② 以功能点（FP）为单位度量软件规模。 （2）信息域特性 ① 输入项数（Inp） ② 输出项数（Out） ③ 查询数（Inq）④ 主文件数（Maf） ⑤ 外部接口数（Inf） （3）估算功能点的步骤 ① 计算未调整的功能点数UFP 需记住公式： UFP＝a1×Inp＋a2×Out＋a3×Inq＋a4×Maf＋a5×Inf 其中，ai（1≤i≤5）是信息域特性系数，由相应特性的复杂级别决定，如 表13-1所示。 表13-1 信息域特性系数值 ② 计算技术复杂性因子TCF 在表13-2中列出了全部技术因素，并用Fi（1≤i≤14）代表这些因素。 表13-2 技术因素a．根据软件的特点，为每个因素分配一个从0到5的值。 b．用下式计算技术因素对软件规模的综合影响程度DI（0～70）： c．技术复杂性因子TCF（0.65～1.35）由下式计算：TCF＝0.65＋ 0.01×DI ③ 计算功能点数FP 用下式计算功能点数FP：FP＝UFP×TCF （4）功能点技术的优缺点 ① 优点：功能点数与所用的编程语言无关，比代码行技术更合理；② 缺点：在判断信息域特性复杂级别和技术因素的影响程度时，功能点 技术存在相当大的主观因素。 二、工作量估算 1 工作量概念 工作量是软件规模的函数，工作量的单位通常是人月（pm）。 2 静态单变量模型 （1）形式 静态单变量模型的总体结构形式如下： E=A+B×(eν)c 其中，A、B和C是由经验数据导出的常数，E是以人月为单位的工作 量，eν是估算变量（KLOC或FP）。 （2）分类 ① 面向KLOC的估算模型 a．Walston_Felix模型：E=5."><meta name=author content="Me"><link rel=canonical href=https://zcy2875634712.github.io/posts/note/tmp/12/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG+9vmJ0cTS+ovo0FeA=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://zcy2875634712.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://zcy2875634712.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://zcy2875634712.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://zcy2875634712.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://zcy2875634712.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content><meta property="og:description" content="复习笔记 一、估算软件规模 软件项目管理先于任何技术活动之前开始，并且贯穿于软件的整个生命 周期之中，而制定计划的基础是工作量估算和完成期限估算。 1 代码行技术 （1）定义 代码行技术依据以往开发类似产品的经验和历史数据，估计实现一个功 能所需要的源程序行数。 （2）方法 ① 每名工程师估计程序的最小规模（a）、最大规模（b）和最可能的规 模（m），分别算出这3种规模的平均值后，再用下式计算程序规模的 估计值： （13.1） ② 程序较小时用的单位是代码行数（LOC）；程序较大时用的单位是千 行代码数（KLOC）。（3）优点 ① 代码是所有软件开发项目都有的“产品”，而且很容易计算代码行数。 ② 有以往开发类似产品的历史数据可参考时，估计出的数值比较准确。 （4）缺点 ① 源程序仅是软件配置的一个成分，用它的规模代表整个软件的规模不 太合理。 ② 用不同语言实现同一个软件所需要的代码行数并不相同。 ③ 不适用于非过程语言。 2 功能点技术 （1）特点 ① 功能点技术依据对软件信息域特性和软件复杂性的评估结果，估算软 件规模。 ② 以功能点（FP）为单位度量软件规模。 （2）信息域特性 ① 输入项数（Inp） ② 输出项数（Out） ③ 查询数（Inq）④ 主文件数（Maf） ⑤ 外部接口数（Inf） （3）估算功能点的步骤 ① 计算未调整的功能点数UFP 需记住公式： UFP＝a1×Inp＋a2×Out＋a3×Inq＋a4×Maf＋a5×Inf 其中，ai（1≤i≤5）是信息域特性系数，由相应特性的复杂级别决定，如 表13-1所示。 表13-1 信息域特性系数值 ② 计算技术复杂性因子TCF 在表13-2中列出了全部技术因素，并用Fi（1≤i≤14）代表这些因素。 表13-2 技术因素a．根据软件的特点，为每个因素分配一个从0到5的值。 b．用下式计算技术因素对软件规模的综合影响程度DI（0～70）： c．技术复杂性因子TCF（0.65～1.35）由下式计算：TCF＝0.65＋ 0.01×DI ③ 计算功能点数FP 用下式计算功能点数FP：FP＝UFP×TCF （4）功能点技术的优缺点 ① 优点：功能点数与所用的编程语言无关，比代码行技术更合理；② 缺点：在判断信息域特性复杂级别和技术因素的影响程度时，功能点 技术存在相当大的主观因素。 二、工作量估算 1 工作量概念 工作量是软件规模的函数，工作量的单位通常是人月（pm）。 2 静态单变量模型 （1）形式 静态单变量模型的总体结构形式如下： E=A+B×(eν)c 其中，A、B和C是由经验数据导出的常数，E是以人月为单位的工作 量，eν是估算变量（KLOC或FP）。 （2）分类 ① 面向KLOC的估算模型 a．Walston_Felix模型：E=5."><meta property="og:type" content="article"><meta property="og:url" content="https://zcy2875634712.github.io/posts/note/tmp/12/"><meta property="og:image" content="https://zcy2875634712.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts"><meta property="og:site_name" content="ybyb"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://zcy2875634712.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content><meta name=twitter:description content="复习笔记 一、估算软件规模 软件项目管理先于任何技术活动之前开始，并且贯穿于软件的整个生命 周期之中，而制定计划的基础是工作量估算和完成期限估算。 1 代码行技术 （1）定义 代码行技术依据以往开发类似产品的经验和历史数据，估计实现一个功 能所需要的源程序行数。 （2）方法 ① 每名工程师估计程序的最小规模（a）、最大规模（b）和最可能的规 模（m），分别算出这3种规模的平均值后，再用下式计算程序规模的 估计值： （13.1） ② 程序较小时用的单位是代码行数（LOC）；程序较大时用的单位是千 行代码数（KLOC）。（3）优点 ① 代码是所有软件开发项目都有的“产品”，而且很容易计算代码行数。 ② 有以往开发类似产品的历史数据可参考时，估计出的数值比较准确。 （4）缺点 ① 源程序仅是软件配置的一个成分，用它的规模代表整个软件的规模不 太合理。 ② 用不同语言实现同一个软件所需要的代码行数并不相同。 ③ 不适用于非过程语言。 2 功能点技术 （1）特点 ① 功能点技术依据对软件信息域特性和软件复杂性的评估结果，估算软 件规模。 ② 以功能点（FP）为单位度量软件规模。 （2）信息域特性 ① 输入项数（Inp） ② 输出项数（Out） ③ 查询数（Inq）④ 主文件数（Maf） ⑤ 外部接口数（Inf） （3）估算功能点的步骤 ① 计算未调整的功能点数UFP 需记住公式： UFP＝a1×Inp＋a2×Out＋a3×Inq＋a4×Maf＋a5×Inf 其中，ai（1≤i≤5）是信息域特性系数，由相应特性的复杂级别决定，如 表13-1所示。 表13-1 信息域特性系数值 ② 计算技术复杂性因子TCF 在表13-2中列出了全部技术因素，并用Fi（1≤i≤14）代表这些因素。 表13-2 技术因素a．根据软件的特点，为每个因素分配一个从0到5的值。 b．用下式计算技术因素对软件规模的综合影响程度DI（0～70）： c．技术复杂性因子TCF（0.65～1.35）由下式计算：TCF＝0.65＋ 0.01×DI ③ 计算功能点数FP 用下式计算功能点数FP：FP＝UFP×TCF （4）功能点技术的优缺点 ① 优点：功能点数与所用的编程语言无关，比代码行技术更合理；② 缺点：在判断信息域特性复杂级别和技术因素的影响程度时，功能点 技术存在相当大的主观因素。 二、工作量估算 1 工作量概念 工作量是软件规模的函数，工作量的单位通常是人月（pm）。 2 静态单变量模型 （1）形式 静态单变量模型的总体结构形式如下： E=A+B×(eν)c 其中，A、B和C是由经验数据导出的常数，E是以人月为单位的工作 量，eν是估算变量（KLOC或FP）。 （2）分类 ① 面向KLOC的估算模型 a．Walston_Felix模型：E=5."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://zcy2875634712.github.io/posts/"},{"@type":"ListItem","position":2,"name":"","item":"https://zcy2875634712.github.io/posts/note/tmp/12/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"","name":"","description":"复习笔记 一、估算软件规模 软件项目管理先于任何技术活动之前开始，并且贯穿于软件的整个生命 周期之中，而制定计划的基础是工作量估算和完成期限估算。 1 代码行技术 （1）定义 代码行技术依据以往开发类似产品的经验和历史数据，估计实现一个功 能所需要的源程序行数。 （2）方法 ① 每名工程师估计程序的最小规模（a）、最大规模（b）和最可能的规 模（m），分别算出这3种规模的平均值后，再用下式计算程序规模的 估计值： （13.1） ② 程序较小时用的单位是代码行数（LOC）；程序较大时用的单位是千 行代码数（KLOC）。（3）优点 ① 代码是所有软件开发项目都有的“产品”，而且很容易计算代码行数。 ② 有以往开发类似产品的历史数据可参考时，估计出的数值比较准确。 （4）缺点 ① 源程序仅是软件配置的一个成分，用它的规模代表整个软件的规模不 太合理。 ② 用不同语言实现同一个软件所需要的代码行数并不相同。 ③ 不适用于非过程语言。 2 功能点技术 （1）特点 ① 功能点技术依据对软件信息域特性和软件复杂性的评估结果，估算软 件规模。 ② 以功能点（FP）为单位度量软件规模。 （2）信息域特性 ① 输入项数（Inp） ② 输出项数（Out） ③ 查询数（Inq）④ 主文件数（Maf） ⑤ 外部接口数（Inf） （3）估算功能点的步骤 ① 计算未调整的功能点数UFP 需记住公式： UFP＝a1×Inp＋a2×Out＋a3×Inq＋a4×Maf＋a5×Inf 其中，ai（1≤i≤5）是信息域特性系数，由相应特性的复杂级别决定，如 表13-1所示。 表13-1 信息域特性系数值 ② 计算技术复杂性因子TCF 在表13-2中列出了全部技术因素，并用Fi（1≤i≤14）代表这些因素。 表13-2 技术因素a．根据软件的特点，为每个因素分配一个从0到5的值。 b．用下式计算技术因素对软件规模的综合影响程度DI（0～70）： c．技术复杂性因子TCF（0.65～1.35）由下式计算：TCF＝0.65＋ 0.01×DI ③ 计算功能点数FP 用下式计算功能点数FP：FP＝UFP×TCF （4）功能点技术的优缺点 ① 优点：功能点数与所用的编程语言无关，比代码行技术更合理；② 缺点：在判断信息域特性复杂级别和技术因素的影响程度时，功能点 技术存在相当大的主观因素。 二、工作量估算 1 工作量概念 工作量是软件规模的函数，工作量的单位通常是人月（pm）。 2 静态单变量模型 （1）形式 静态单变量模型的总体结构形式如下： E=A+B×(eν)c 其中，A、B和C是由经验数据导出的常数，E是以人月为单位的工作 量，eν是估算变量（KLOC或FP）。 （2）分类 ① 面向KLOC的估算模型 a．Walston_Felix模型：E=5.","keywords":[],"articleBody":"复习笔记 一、估算软件规模 软件项目管理先于任何技术活动之前开始，并且贯穿于软件的整个生命 周期之中，而制定计划的基础是工作量估算和完成期限估算。 1 代码行技术 （1）定义 代码行技术依据以往开发类似产品的经验和历史数据，估计实现一个功 能所需要的源程序行数。 （2）方法 ① 每名工程师估计程序的最小规模（a）、最大规模（b）和最可能的规 模（m），分别算出这3种规模的平均值后，再用下式计算程序规模的 估计值： （13.1） ② 程序较小时用的单位是代码行数（LOC）；程序较大时用的单位是千 行代码数（KLOC）。（3）优点 ① 代码是所有软件开发项目都有的“产品”，而且很容易计算代码行数。 ② 有以往开发类似产品的历史数据可参考时，估计出的数值比较准确。 （4）缺点 ① 源程序仅是软件配置的一个成分，用它的规模代表整个软件的规模不 太合理。 ② 用不同语言实现同一个软件所需要的代码行数并不相同。 ③ 不适用于非过程语言。 2 功能点技术 （1）特点 ① 功能点技术依据对软件信息域特性和软件复杂性的评估结果，估算软 件规模。 ② 以功能点（FP）为单位度量软件规模。 （2）信息域特性 ① 输入项数（Inp） ② 输出项数（Out） ③ 查询数（Inq）④ 主文件数（Maf） ⑤ 外部接口数（Inf） （3）估算功能点的步骤 ① 计算未调整的功能点数UFP 需记住公式： UFP＝a1×Inp＋a2×Out＋a3×Inq＋a4×Maf＋a5×Inf 其中，ai（1≤i≤5）是信息域特性系数，由相应特性的复杂级别决定，如 表13-1所示。 表13-1 信息域特性系数值 ② 计算技术复杂性因子TCF 在表13-2中列出了全部技术因素，并用Fi（1≤i≤14）代表这些因素。 表13-2 技术因素a．根据软件的特点，为每个因素分配一个从0到5的值。 b．用下式计算技术因素对软件规模的综合影响程度DI（0～70）： c．技术复杂性因子TCF（0.65～1.35）由下式计算：TCF＝0.65＋ 0.01×DI ③ 计算功能点数FP 用下式计算功能点数FP：FP＝UFP×TCF （4）功能点技术的优缺点 ① 优点：功能点数与所用的编程语言无关，比代码行技术更合理；② 缺点：在判断信息域特性复杂级别和技术因素的影响程度时，功能点 技术存在相当大的主观因素。 二、工作量估算 1 工作量概念 工作量是软件规模的函数，工作量的单位通常是人月（pm）。 2 静态单变量模型 （1）形式 静态单变量模型的总体结构形式如下： E=A+B×(eν)c 其中，A、B和C是由经验数据导出的常数，E是以人月为单位的工作 量，eν是估算变量（KLOC或FP）。 （2）分类 ① 面向KLOC的估算模型 a．Walston_Felix模型：E=5.2×(KLOC)0.91 b．Bailey_Basili模型：E=5.5+0.73×(KLOC)1.16 c．Boehm简单模型：E=3.2×(KLOC)1.05 d．Doty模型（KLOC\u003e9时适用）：E=5.288×(KLOC)1.047② 面向FP的估算模型 a．Albrecht \u0026 Gaffney模型：E=-13.39+0.0545FP b．Maston，Barnett和Mellichamp模型：E=585.7+15.12FP 3 动态多变量模型 ① 特点 动态多变量模型把工作量看作软件规模和开发时间这两个变量的函数。 ② 形式 动态多变量估算模型的形式如下： （13.2） 其中，E是以人月或人年为单位的工作量；t是以月或年为单位的项目持 续时间；B是特殊技术因子。 4 COCOMO2模型（构造性成本模型） （1）3层模型 ① 应用系统组成模型； ② 早期设计模型；③ 体系结构模型。 （2）形式 COCOMO2模型把软件开发工作量表示成代码行数（KLOC）的非线性 函数： （13.3） 其中：E是开发工作量（以人月为单位）；a是模型系数；KLOC是估计 的源代码行数（以千行为单位）；b是模型指数；fi（i＝1～17）是成本 因素。 （3）模型指数 COCOMO2采用了b分级模型，是使用5个分级因素Wi（1≤i≤5），其中 每个因素都划分成从甚低（Wi＝5）到特高（Wi＝0）的6个级别，用下 式计算b（1.01～1.26）的数值： （13.4） （4）COCOMO2的5个分级因素 ① 项目先例性； ② 开发灵活性； ③ 风险排除度；④ 项目组凝聚力； ⑤ 过程成熟度。 三、进度计划 1 相关概念 （1）一个有效的软件过程应该定义一个适用于当前项目的任务集合。 （2）一个任务集合包括一组软件工程工作任务、里程碑和可交付的产 品。 2 估算开发时间 （1）利用成本估算模型估算开发时间 ① Walston_Felix模型：T=2.5E0.35 ② 原始的COCOMO模型：T=2.5E0.38 ③ COCOMO2模型：T=3.0E0.33+0.2×(b-1.01) ④ Putnam模型T=2.4E1/3 其中，E是开发工作量（以人月为单位）；T是开发时间（以月为单 位）。 （2）项目组规模与项目组总生产率的关系 ① 通信路径项目组成员之间的通信路径数，由项目组人数和项目组结构决定。通信 路径数大约在P～P2/2的范围内变化。 ② 平均生产力 某一个组员与其他组员通信的路径数在1～（P-1）的范围内变化。如果 不与任何人通信时个人生产率为L，而且每条通信路径导致生产率减少 1，则组员个人平均生产率为：Lr=L-l(P-1)r，其中，r是对通信路径数的 度量，0","wordCount":"388","inLanguage":"en","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://zcy2875634712.github.io/posts/note/tmp/12/"},"publisher":{"@type":"Organization","name":"ybyb","logo":{"@type":"ImageObject","url":"https://zcy2875634712.github.io/%3Clink%20/%20abs%20url%3E"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://zcy2875634712.github.io/ accesskey=h title="Home (Alt + H)"><img src=https://zcy2875634712.github.io/apple-touch-icon.png alt aria-label=logo height=35>Home</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://zcy2875634712.github.io/categories/ title=categories><span>categories</span></a></li><li><a href=https://zcy2875634712.github.io/tags/ title=tags><span>tags</span></a></li><li><a href=https://example.org title=example.org><span>example.org</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://zcy2875634712.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://zcy2875634712.github.io/posts/>Posts</a></div><h1 class=post-title></h1><div class=post-meta>2 min&nbsp;·&nbsp;388 words&nbsp;·&nbsp;Me&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/note/tmp/12.md rel="noopener noreferrer" target=_blank>Suggest Changes</a></div></header><div class=post-content><p>复习笔记
+一、估算软件规模
+软件项目管理先于任何技术活动之前开始，并且贯穿于软件的整个生命
+周期之中，而制定计划的基础是工作量估算和完成期限估算。
+1 代码行技术
+（1）定义
+代码行技术依据以往开发类似产品的经验和历史数据，估计实现一个功
+能所需要的源程序行数。
+（2）方法
+① 每名工程师估计程序的最小规模（a）、最大规模（b）和最可能的规
+模（m），分别算出这3种规模的平均值后，再用下式计算程序规模的
+估计值：
+（13.1）
+② 程序较小时用的单位是代码行数（LOC）；程序较大时用的单位是千
+行代码数（KLOC）。（3）优点
+① 代码是所有软件开发项目都有的“产品”，而且很容易计算代码行数。
+② 有以往开发类似产品的历史数据可参考时，估计出的数值比较准确。
+（4）缺点
+① 源程序仅是软件配置的一个成分，用它的规模代表整个软件的规模不
+太合理。
+② 用不同语言实现同一个软件所需要的代码行数并不相同。
+③ 不适用于非过程语言。
+2 功能点技术
+（1）特点
+① 功能点技术依据对软件信息域特性和软件复杂性的评估结果，估算软
+件规模。
+② 以功能点（FP）为单位度量软件规模。
+（2）信息域特性
+① 输入项数（Inp）
+② 输出项数（Out）
+③ 查询数（Inq）④ 主文件数（Maf）
+⑤ 外部接口数（Inf）
+（3）估算功能点的步骤
+① 计算未调整的功能点数UFP
+需记住公式：
+UFP＝a1×Inp＋a2×Out＋a3×Inq＋a4×Maf＋a5×Inf
+其中，ai（1≤i≤5）是信息域特性系数，由相应特性的复杂级别决定，如
+表13-1所示。
+表13-1 信息域特性系数值
+② 计算技术复杂性因子TCF
+在表13-2中列出了全部技术因素，并用Fi（1≤i≤14）代表这些因素。
+表13-2 技术因素a．根据软件的特点，为每个因素分配一个从0到5的值。
+b．用下式计算技术因素对软件规模的综合影响程度DI（0～70）：
+c．技术复杂性因子TCF（0.65～1.35）由下式计算：TCF＝0.65＋
+0.01×DI
+③ 计算功能点数FP
+用下式计算功能点数FP：FP＝UFP×TCF
+（4）功能点技术的优缺点
+① 优点：功能点数与所用的编程语言无关，比代码行技术更合理；② 缺点：在判断信息域特性复杂级别和技术因素的影响程度时，功能点
+技术存在相当大的主观因素。
+二、工作量估算
+1 工作量概念
+工作量是软件规模的函数，工作量的单位通常是人月（pm）。
+2 静态单变量模型
+（1）形式
+静态单变量模型的总体结构形式如下：
+E=A+B×(eν)c
+其中，A、B和C是由经验数据导出的常数，E是以人月为单位的工作
+量，eν是估算变量（KLOC或FP）。
+（2）分类
+① 面向KLOC的估算模型
+a．Walston_Felix模型：E=5.2×(KLOC)0.91
+b．Bailey_Basili模型：E=5.5+0.73×(KLOC)1.16
+c．Boehm简单模型：E=3.2×(KLOC)1.05
+d．Doty模型（KLOC>9时适用）：E=5.288×(KLOC)1.047② 面向FP的估算模型
+a．Albrecht & Gaffney模型：E=-13.39+0.0545FP
+b．Maston，Barnett和Mellichamp模型：E=585.7+15.12FP
+3 动态多变量模型
+① 特点
+动态多变量模型把工作量看作软件规模和开发时间这两个变量的函数。
+② 形式
+动态多变量估算模型的形式如下：
+（13.2）
+其中，E是以人月或人年为单位的工作量；t是以月或年为单位的项目持
+续时间；B是特殊技术因子。
+4 COCOMO2模型（构造性成本模型）
+（1）3层模型
+① 应用系统组成模型；
+② 早期设计模型；③ 体系结构模型。
+（2）形式
+COCOMO2模型把软件开发工作量表示成代码行数（KLOC）的非线性
+函数：
+（13.3）
+其中：E是开发工作量（以人月为单位）；a是模型系数；KLOC是估计
+的源代码行数（以千行为单位）；b是模型指数；fi（i＝1～17）是成本
+因素。
+（3）模型指数
+COCOMO2采用了b分级模型，是使用5个分级因素Wi（1≤i≤5），其中
+每个因素都划分成从甚低（Wi＝5）到特高（Wi＝0）的6个级别，用下
+式计算b（1.01～1.26）的数值：
+（13.4）
+（4）COCOMO2的5个分级因素
+① 项目先例性；
+② 开发灵活性；
+③ 风险排除度；④ 项目组凝聚力；
+⑤ 过程成熟度。
+三、进度计划
+1 相关概念
+（1）一个有效的软件过程应该定义一个适用于当前项目的任务集合。
+（2）一个任务集合包括一组软件工程工作任务、里程碑和可交付的产
+品。
+2 估算开发时间
+（1）利用成本估算模型估算开发时间
+① Walston_Felix模型：T=2.5E0.35
+② 原始的COCOMO模型：T=2.5E0.38
+③ COCOMO2模型：T=3.0E0.33+0.2×(b-1.01)
+④ Putnam模型T=2.4E1/3
+其中，E是开发工作量（以人月为单位）；T是开发时间（以月为单
+位）。
+（2）项目组规模与项目组总生产率的关系
+① 通信路径项目组成员之间的通信路径数，由项目组人数和项目组结构决定。通信
+路径数大约在P～P2/2的范围内变化。
+② 平均生产力
+某一个组员与其他组员通信的路径数在1～（P-1）的范围内变化。如果
+不与任何人通信时个人生产率为L，而且每条通信路径导致生产率减少
+1，则组员个人平均生产率为：Lr=L-l(P-1)r，其中，r是对通信路径数的
+度量，0&lt;r≤1。
+③ 总生产率
+对于一个规模为P的项目组，项目组的总生产率为：Ltot=P(L-l(P-1)r)。
+对于给定的一组L，l和r的值，总生产率Ltot是项目组规模P的函数。
+3 Gantt图
+（1）优点
+① 很形象地描绘任务分解情况，以及每个子任务（作业）的开始时间和
+结束时间。
+② 容易掌握、容易绘制。
+（2）缺点
+① 不能显式地描绘各项作业彼此间的依赖关系。
+② 进度计划的关键部分不明确，难于判定哪些部分应当是主攻和主控的对象。
+③ 计划中有潜力的部分及潜力的大小不明确，往往造成潜力的浪费。
+4 工程网络
+（1）定义
+工程网络描绘任务分解情况以及每项作业的开始时间和结束时间，并描
+绘了各个作业彼此间的依赖关系。
+（2）表示
+① 用箭头表示作业；
+② 用圆圈表示事件；
+③ 用虚线箭头表示虚拟作业。
+5 估算工程进度
+（1）完善工程网络
+① 把每个作业估计需要使用的时间写在表示该项作业的箭头上方。
+② 为每个事件计算最早时刻EET和最迟时刻LET，分别写在表示事件的
+圆圈的右上角和右下角。
+（2）最早时刻EET事件的最早时刻是该事件可以发生的最早时间。
+（3）最迟时刻LET
+事件的最迟时刻是在不影响工程竣工时间的前提下，该事件最晚可以发
+生的时刻。
+6 关键路径
+（1）定义
+由最早时刻和最迟时刻相同的事件定义了关键路径。
+（2）特点
+① 处于关键路径之外的任务进度拖后，不会影响整个项目的完成时间。
+② 处于关键路径之中的任务进度拖后，则整个项目的完成日期就会拖
+后。
+7 机动时间
+一个作业可以有的全部机动时间等于它的结束事件的最迟时刻减去它的
+开始事件的最早时刻，再减去这个作业的持续时间：机动时间=(LET)结
+束-(EET)开始-持续时间。
+四、人员组织
+1 必要性（1）项目成功的关键在于合理的组织人员，使他们有效地分工协作共同
+完成开发工作。
+（2）项目组组织得越好，其生产率越高，而且产品质量也越好。
+（3）项目组具有了凝聚力，成功的可能性就大大增加了。
+2 典型的组织方式
+（1）民主制程序员组
+① 优点
+a．组员们对发现程序错误持积极的态度，有助于更快速地发现错误，
+提高代码质量。
+b．组员们享有充分民主，小组凝聚力高、学术空气浓厚，有利于攻克
+技术难关。
+② 缺点
+没有明确的权威指导开发过程，组员间将缺乏必要的协调，最终可能导
+致工程失败。
+③ 适用性
+所要开发的软件的技术难度较高时，采用民主制程序员组是适宜的。
+（2）主程序员组
+① 定义图13-1
+主程序员组的结构
+② 优点
+a．专业化：该组每名成员仅完成他们擅长的工作。
+b．层次性：主程序员指挥组员工作，并对项目全面负责。
+③ 缺点
+符合主程序员、后备程序员、编辑秘书标准的人才在现实社会中并不容
+易雇佣到。
+（3）现代程序员组
+① 主程序员由两个人共同担任，组织结构如图13-2所示。图13-2
+现代程序员组的结构
+② 制定针对公共职责范围内的事务的处理方案。
+③ 实行分组策略。
+④ 分散决定。
+五、质量保证
+1 软件质量
+（1）定义
+软件质量是软件与明确地和隐含地定义的需求相一致的程度。
+【注意】软件需求是度量软件质量的基础，与需求不一致就是质量不
+高。（2）软件质量因素与产品活动
+① 软件质量因素
+如表13-3所示，列出了软件质量因素的简明定义。
+表13-3 软件质量因素的定义
+② 产品活动（倾向）分类
+可以把产品活动分为产品运行、产品修改和产品转移三类。
+③ 软件质量因素和3种产品活动的关系
+如图13-3所示。图13-3
+软件质量因素与产品活动的关系
+【注意】图13-3是考点，记住每一质量因素属于哪一产品活动。
+2 软件质量保证措施
+（1）措施
+① 基于非执行的测试（复审或评审）。
+② 基于执行的测试（软件测试）。
+③ 程序正确性证明。
+（2）技术复审
+① 优点
+能较早发现软件错误，防止错误被传播到软件过程的后续阶段。② 方法
+技术复审包括走查和审查等具体方法。
+（3）程序正确性证明的方法
+① 人工证明。
+② 研究能证明程序正确性的自动系统。
+六、软件配置管理
+1 相关概念
+（1）定义
+软件配置管理是在软件的整个生命期内管理变化的一组活动。
+（2）目的
+① 标识变化；
+② 控制变化；
+③ 确保适当地实现了变化；
+④ 向需要知道这类信息的人报告变化。
+（3）与维护的区别
+① 维护是在软件交付给用户使用后才发生的。
+② 配置管理是在软件项目启动时就开始，并且一直持续到软件退役后才终止的一组跟踪和控制活动。
+2 软件配置
+（1）软件配置项
+① 计算机程序（源代码和可执行程序）。
+② 描述计算机程序的文档（供技术人员或用户使用）。
+③ 数据（程序内包含的或在程序外的）。
+（2）基线
+① 定义
+基线就是通过了正式复审的软件配置项。
+② 作用
+基线有助于人们在不严重妨碍合理变化的前提下来控制变化。
+3 软件配置管理过程
+（1）标识软件配置中的对象；
+（2）版本控制；
+（3）变化控制；
+（4）配置审计；（5）状态报告。
+七、能力成熟度模型
+1 能力成熟度模型（CMM）
+（1）定义
+能力成熟度模型（CMM）是用于评价软件机构的软件过程能力成熟度
+的模型。
+（2）目的
+① 为大型软件项目的招投标活动提供一种全面而客观的评审依据。
+② 应用于许多软件机构内部的过程改进活动中。
+（3）基本思想
+由于问题是由人们管理软件过程的方法不当引起的，所以新软件技术的
+运用并不会自动提高软件的生产率和质量。
+（4）作用
+① 有助于软件开发机构建立一个有规律的、成熟的软件过程。
+② 改进后的软件过程将开发出质量更好的软件，避免时间延误和费用超
+支。
+（5）对能力成熟度划分的原因
+① 对软件过程的改进，是在完成一个又一个小的改进步骤基础上不断进行的渐进过程。
+② 这5个成熟度等级定义了一个有序的尺度，用以测量软件机构的软件
+过程成熟度和评价其软件过程能力。
+③ 成熟度等级帮助软件机构把应做的改进工作排出优先次序。
+④ 成熟度等级是妥善定义的向成熟软件机构前进途中的平台，每个成熟
+度等级都为软件过程的继续改进提供了一个台阶。
+2 能力成熟度的5个等级
+（1）初始级（1级）
+（2）可重复级（2级）
+（3）已定义级（3级）
+（4）已管理级（4级）
+（5）优化级（5级）13.2 课后习题</p></div><footer class=post-footer><ul class=post-tags></ul><nav class=paginav><a class=prev href=https://zcy2875634712.github.io/posts/note/tmp/11/><span class=title>« Prev</span><br><span></span></a>
+<a class=next href=https://zcy2875634712.github.io/posts/note/tmp/3/><span class=title>Next »</span><br><span></span></a></nav><div class=share-buttons><a target=_blank rel="noopener noreferrer" aria-label="share  on twitter" href="https://twitter.com/intent/tweet/?text=&amp;url=https%3a%2f%2fzcy2875634712.github.io%2fposts%2fnote%2ftmp%2f12%2f&amp;hashtags="><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share  on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fzcy2875634712.github.io%2fposts%2fnote%2ftmp%2f12%2f&amp;title=&amp;summary=&amp;source=https%3a%2f%2fzcy2875634712.github.io%2fposts%2fnote%2ftmp%2f12%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share  on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fzcy2875634712.github.io%2fposts%2fnote%2ftmp%2f12%2f&title="><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share  on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fzcy2875634712.github.io%2fposts%2fnote%2ftmp%2f12%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share  on whatsapp" href="https://api.whatsapp.com/send?text=%20-%20https%3a%2f%2fzcy2875634712.github.io%2fposts%2fnote%2ftmp%2f12%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share  on telegram" href="https://telegram.me/share/url?text=&amp;url=https%3a%2f%2fzcy2875634712.github.io%2fposts%2fnote%2ftmp%2f12%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentcolor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></div></footer></article></main><footer class=footer><span>&copy; 2023 <a href=https://zcy2875634712.github.io/>ybyb</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
