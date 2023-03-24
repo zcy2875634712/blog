@@ -50,15 +50,6 @@ echo $str	# a.b.c.d echo ${str%.*}	# a.b.c echo ${str%%.*}	# a echo ${str#*.}	#b
     </item>
     
     <item>
-      <title>Untitled</title>
-      <link>https://zcy2875634712.github.io/posts/note/untitled/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/note/untitled/</guid>
-      <description>abc </description>
-    </item>
-    
-    <item>
       <title>vim</title>
       <link>https://zcy2875634712.github.io/posts/note/linux/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -88,9 +79,9 @@ diw di{ </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zcy2875634712.github.io/posts/note/%E5%A4%8D%E8%AF%95%E9%97%AE%E7%AD%94/</guid>
-      <description>你为什么选择跨专业考研？
-自我介绍
-各位老师上午好，我是xxx，非常荣幸能够进入林科大软件工程的复试。我本科就读于中南林业科技大学的食品质量与安全专业，在林科大的四年里，优越的人文环境，浓厚的学习氛围时刻熏陶着我，专业成绩良好。 我选择跨考软件工程这一专业，最重要的原因就是热爱，对编程的兴趣起源于高中信息技术教材上的VB语言，从简单的打字测速程序到复杂的管理系统让我感受到了编程的强大力量。其次是因为一直以来我的理想就是成为一名程序员，我在高考后de暑假自学了C语言，本科期间自学了python和数据结构。 不忘初心，方得始终，希望有机会能够继续跟随学校优秀的老师们学习软件工程相关知识，相信凭借自己的勤奋和踏实，能在计算机领域提升自己的专业素养和实践能力，谢谢老师，我的自我介绍完毕。 Hello teachers, good morning. I am xxx, and it is my great honor to have the opportunity to participate in the software engineering interview at Central South University of Forestry and Technology. I majored in Food Quality and Safety at Central South University of Forestry and Technology for my undergraduate studies. During my four years at Central South University of Forestry and Technology, I have been influenced by the excellent humanistic environment and strong academic atmosphere, and my academic performance was outstanding.</description>
+      <description>自我介绍
+各位老师上午好，我是xxx，非常荣幸能够进入林科大软件工程的复试。我本科就读于中南林业科技大学的食品质量与安全专业，在林科大的四年里，优越的人文环境，浓厚的学习氛围时刻熏陶着我，专业成绩良好。 我选择跨考软件工程这一专业，最重要的原因就是热爱，对编程的兴趣起源于高中信息技术教材上的VB语言，从简单的打字测速程序到复杂的管理系统让我感受到了编程的强大力量。其次是因为一直以来我的理想就是成为一名程序员，我在高考后de暑假自学了C语言，本科期间自学了python和数据结构。 不忘初心，方得始终，希望有机会能够继续跟随学校优秀的老师们学习软件工程相关知识，相信凭借自己的勤奋和踏实，能在计算机领域提升自己的专业素养和实践能力，谢谢老师，我的自我介绍完毕。
+Hello teachers, good morning. I am xxx, and it is my great honor to have the opportunity to participate in the software engineering interview at Central South University of Forestry and Technology. I majored in Food Quality and Safety at Central South University of Forestry and Technology for my undergraduate studies. During my four years at Central South University of Forestry and Technology, I have been influenced by the excellent humanistic environment and strong academic atmosphere, and my academic performance was outstanding.</description>
     </item>
     
     <item>
