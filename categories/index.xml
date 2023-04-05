@@ -11,11 +11,56 @@
     </image>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://zcy2875634712.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>go</title>
+      <link>https://zcy2875634712.github.io/categories/go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zcy2875634712.github.io/categories/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://zcy2875634712.github.io/categories/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zcy2875634712.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>other</title>
+      <link>https://zcy2875634712.github.io/categories/other/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zcy2875634712.github.io/categories/other/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>python</title>
       <link>https://zcy2875634712.github.io/categories/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zcy2875634712.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>深度学习</title>
+      <link>https://zcy2875634712.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zcy2875634712.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>计算机网络</title>
+      <link>https://zcy2875634712.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zcy2875634712.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
       <description></description>
     </item>
     

@@ -11,12 +11,31 @@
     </image>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://zcy2875634712.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>flask</title>
+      <link>https://zcy2875634712.github.io/posts/note/python/flask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zcy2875634712.github.io/posts/note/python/flask/</guid>
+      <description>开始 from flask import Flask app = Flask(__name__)	#实例化Flask类，__name__为程序名 # 注册路由,路由负责管理URL和函数之间的映射, 而这个函数则被称为视图函数 @app.route(&amp;#39;/&amp;#39;) def index(): return &amp;#39;hello&amp;#39; 运行服务器：flash run
+数据库 ORM ORM 把数据库映射成对象。 数据库的表（table） --&amp;gt; 类（class） 记录（record，行数据）	--&amp;gt; 对象（object） 字段（field）	--&amp;gt; 对象的属性（attribute） 初始化 from flask_sqlalchemy import SQLAlchemy app = Flask(__name__) db = SQLAlchemy(app) 模型类 class User(db.Model): id = db.Column(db.Integer, primary_key=True) name = db.Column(db.String(20)) age = db.Column(db.Integer) CRUD ############创建############ record = User(name=&amp;#39;Jack&amp;#39;, age=33) db.session.add(record) db.session.commit() ############查找############ record = User.query.filter_by(name=&amp;#39;Jack&amp;#39;) ############读取############ age = record.</description>
+    </item>
+    
+    <item>
       <title>python速查</title>
       <link>https://zcy2875634712.github.io/posts/%E9%80%9F%E6%9F%A5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zcy2875634712.github.io/posts/%E9%80%9F%E6%9F%A5/</guid>
       <description>字符串 运算 a=&amp;#39;hello,&amp;#39; b=&amp;#39;world&amp;#39; print(a + b) print(&amp;#39;#&amp;#39;*5)	#输出&amp;#39;#####&amp;#39; 输出 a = &amp;#39;hello&amp;#39; b = &amp;#39;world&amp;#39; # hello,world print(f&amp;#39;{a},{b}&amp;#39;)	print(&amp;#39;{},{}&amp;#39;.format(a, b)) print(&amp;#39;%s,%s&amp;#39; % (a, b)) 列表（list） # 创建列表 li1 = [] li2 = [1, 2, 3] li3 = list((1, 2, 3))	#元组转换为列表 li4 = list(range(1, 4)) li5 = [x for x in range(1, 4)] # 更新列表元素 li = [1, 2] li.append(3) li.insert(2, 4)	#[1, 2, 4, 3], 下标为2插入4 # 删除列表元素 del listname[index] del listname[start : end]	#包括start，不包括end listname.</description>
+    </item>
+    
+    <item>
+      <title>速查</title>
+      <link>https://zcy2875634712.github.io/posts/note/python/%E9%80%9F%E6%9F%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zcy2875634712.github.io/posts/note/python/%E9%80%9F%E6%9F%A5/</guid>
+      <description>基本语法 # 输出到控制台 print(&amp;#34;Hello, world!&amp;#34;) # 定义变量 x = 42 y = &amp;#34;Python&amp;#34; # 条件语句 if x &amp;gt; 0: print(&amp;#34;x is positive&amp;#34;) elif x == 0: print(&amp;#34;x is zero&amp;#34;) else: print(&amp;#34;x is negative&amp;#34;) # 循环 for i in range(10): print(i) # 列表 fruits = [&amp;#34;apple&amp;#34;, &amp;#34;banana&amp;#34;, &amp;#34;cherry&amp;#34;] print(fruits[0]) # 输出 &amp;#34;apple&amp;#34; print(len(fruits)) # 输出 3 # 字典 person = {&amp;#34;name&amp;#34;: &amp;#34;John&amp;#34;, &amp;#34;age&amp;#34;: 30} print(person[&amp;#34;name&amp;#34;]) # 输出 &amp;#34;John&amp;#34; print(person.get(&amp;#34;gender&amp;#34;, &amp;#34;unknown&amp;#34;)) # 输出 &amp;#34;unknown&amp;#34; # 函数 def greet(name): print(&amp;#34;Hello, &amp;#34; + name + &amp;#34;!</description>
     </item>
     
   </channel>

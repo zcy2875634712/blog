@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on ybyb</title>
+    <link>https://zcy2875634712.github.io/categories/linux/</link>
+    <description>Recent content in Linux on ybyb</description>
+    <image>
+      <title>ybyb</title>
+      <url>https://zcy2875634712.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zcy2875634712.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zcy2875634712.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux命令</title>
+      <link>https://zcy2875634712.github.io/posts/note/linux/linux%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zcy2875634712.github.io/posts/note/linux/linux%E5%91%BD%E4%BB%A4/</guid>
+      <description>tar 解压tar -xvf filename
+压缩tar -zcvf filename.tar.gz filename</description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://zcy2875634712.github.io/posts/note/linux/shell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zcy2875634712.github.io/posts/note/linux/shell/</guid>
+      <description>Bash 参数拓展 删除前缀后缀
+echo $str	# a.b.c.d echo ${str%.*}	# a.b.c echo ${str%%.*}	# a echo ${str#*.}	#b.c.d echo ${str##*.}	#d sed #删除 sed &amp;#39;/^$/d&amp;#39; &amp;lt;file&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://zcy2875634712.github.io/posts/note/linux/vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zcy2875634712.github.io/posts/note/linux/vim/</guid>
+      <description>动词
+d # 表示删除delete r # 表示替换replace c # 表示修改change y # 表示复制yank v # 表示选取visual select 名词
+w # 表示一个单词word s # 表示一个句子sentence p # 表示一个段落paragraph t # 表示一个 HTML 标签tag 介词
+i # 表示在...之内 inside a # 表示环绕... around t # 表示到...位置前 to f # 表示到...位置上 forward 动词+介词+名词
+diw di{ </description>
+    </item>
+    
+  </channel>
+</rss>

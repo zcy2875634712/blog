@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>深度学习 on ybyb</title>
+    <link>https://zcy2875634712.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link>
+    <description>Recent content in 深度学习 on ybyb</description>
+    <image>
+      <title>ybyb</title>
+      <url>https://zcy2875634712.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zcy2875634712.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zcy2875634712.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>神经网络</title>
+      <link>https://zcy2875634712.github.io/posts/note/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zcy2875634712.github.io/posts/note/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</guid>
+      <description>神经元 一个神经元的功能是求得输入向量与权向量的内积后加偏置，经一个非线性传递函数得到一个标量结果。</description>
+    </item>
+    
+  </channel>
+</rss>

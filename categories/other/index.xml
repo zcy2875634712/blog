@@ -1,54 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on ybyb</title>
-    <link>https://zcy2875634712.github.io/posts/</link>
-    <description>Recent content in Posts on ybyb</description>
+    <title>other on ybyb</title>
+    <link>https://zcy2875634712.github.io/categories/other/</link>
+    <description>Recent content in other on ybyb</description>
     <image>
       <title>ybyb</title>
       <url>https://zcy2875634712.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://zcy2875634712.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zcy2875634712.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>flask</title>
-      <link>https://zcy2875634712.github.io/posts/note/python/flask/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/note/python/flask/</guid>
-      <description>开始 from flask import Flask app = Flask(__name__)	#实例化Flask类，__name__为程序名 # 注册路由,路由负责管理URL和函数之间的映射, 而这个函数则被称为视图函数 @app.route(&amp;#39;/&amp;#39;) def index(): return &amp;#39;hello&amp;#39; 运行服务器：flash run
-数据库 ORM ORM 把数据库映射成对象。 数据库的表（table） --&amp;gt; 类（class） 记录（record，行数据）	--&amp;gt; 对象（object） 字段（field）	--&amp;gt; 对象的属性（attribute） 初始化 from flask_sqlalchemy import SQLAlchemy app = Flask(__name__) db = SQLAlchemy(app) 模型类 class User(db.Model): id = db.Column(db.Integer, primary_key=True) name = db.Column(db.String(20)) age = db.Column(db.Integer) CRUD ############创建############ record = User(name=&amp;#39;Jack&amp;#39;, age=33) db.session.add(record) db.session.commit() ############查找############ record = User.query.filter_by(name=&amp;#39;Jack&amp;#39;) ############读取############ age = record.</description>
-    </item>
-    
-    <item>
-      <title>linux命令</title>
-      <link>https://zcy2875634712.github.io/posts/note/linux/linux%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/note/linux/linux%E5%91%BD%E4%BB%A4/</guid>
-      <description>tar 解压tar -xvf filename
-压缩tar -zcvf filename.tar.gz filename</description>
-    </item>
-    
-    <item>
-      <title>python速查</title>
-      <link>https://zcy2875634712.github.io/posts/%E9%80%9F%E6%9F%A5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/%E9%80%9F%E6%9F%A5/</guid>
-      <description>字符串 运算 a=&amp;#39;hello,&amp;#39; b=&amp;#39;world&amp;#39; print(a + b) print(&amp;#39;#&amp;#39;*5)	#输出&amp;#39;#####&amp;#39; 输出 a = &amp;#39;hello&amp;#39; b = &amp;#39;world&amp;#39; # hello,world print(f&amp;#39;{a},{b}&amp;#39;)	print(&amp;#39;{},{}&amp;#39;.format(a, b)) print(&amp;#39;%s,%s&amp;#39; % (a, b)) 列表（list） # 创建列表 li1 = [] li2 = [1, 2, 3] li3 = list((1, 2, 3))	#元组转换为列表 li4 = list(range(1, 4)) li5 = [x for x in range(1, 4)] # 更新列表元素 li = [1, 2] li.append(3) li.insert(2, 4)	#[1, 2, 4, 3], 下标为2插入4 # 删除列表元素 del listname[index] del listname[start : end]	#包括start，不包括end listname.</description>
-    </item>
-    
-    <item>
-      <title>shell</title>
-      <link>https://zcy2875634712.github.io/posts/note/linux/shell/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/note/linux/shell/</guid>
-      <description>Bash 参数拓展 删除前缀后缀
-echo $str	# a.b.c.d echo ${str%.*}	# a.b.c echo ${str%%.*}	# a echo ${str#*.}	#b.c.d echo ${str##*.}	#d sed #删除 sed &amp;#39;/^$/d&amp;#39; &amp;lt;file&amp;gt; </description>
-    </item>
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zcy2875634712.github.io/categories/other/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Untitled</title>
       <link>https://zcy2875634712.github.io/posts/note/other/untitled/</link>
@@ -79,30 +40,6 @@ UML：又称统一建模语言，它是一个支持模型化和软件系统开�
 集成测试：测试和组装软件的系统化技术 组装方法：非渐增式和渐增式 渐增：自顶向下和自底向上
 白盒测试：白盒测试的前提是可以把程序看成装在一个透明的白盒子里，也就是完全了解程序的结构和处理过程。这种方法按照程序内部的逻辑测试程序，检验程序中的每条通路是否都能按预定要求正确工作。白盒测试又称为结构测试。
 黑盒测试：对于软件测试而言，黑盒测试是把程序看成一个黑盒子，完全不考虑程序的内部结构和处理过程。也就是说，黑盒测试是在程序接口进行的测试，它只检查程序功能是否能按照规格说明书的规定正常使用，程序是否能适当地接收输人数据产生正确的输出信息，并且保持外部信息（如数据库或文件）的完整性。黑盒测试又称为功能测试。</description>
-    </item>
-    
-    <item>
-      <title>vim</title>
-      <link>https://zcy2875634712.github.io/posts/note/linux/vim/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/note/linux/vim/</guid>
-      <description>动词
-d # 表示删除delete r # 表示替换replace c # 表示修改change y # 表示复制yank v # 表示选取visual select 名词
-w # 表示一个单词word s # 表示一个句子sentence p # 表示一个段落paragraph t # 表示一个 HTML 标签tag 介词
-i # 表示在...之内 inside a # 表示环绕... around t # 表示到...位置前 to f # 表示到...位置上 forward 动词+介词+名词
-diw di{ </description>
-    </item>
-    
-    <item>
-      <title>原来这就是网络</title>
-      <link>https://zcy2875634712.github.io/posts/note/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%8E%9F%E6%9D%A5%E8%BF%99%E5%B0%B1%E6%98%AF%E7%BD%91%E7%BB%9C/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/note/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%8E%9F%E6%9D%A5%E8%BF%99%E5%B0%B1%E6%98%AF%E7%BD%91%E7%BB%9C/</guid>
-      <description>原文：https://www.cnblogs.com/flashsun/p/14266148.html
-家庭网络 分组交换：在通信过程中，通信双方以分组为单位、使用存储-转发机制实现数据交互的通信方式
-分组：由一块用户数据和必要的地址和管理信息组成，保证网络能够将数据传递到目标。类似于从邮局发送的包裹上注明的地址一样,只有提供给网络这些信息，网络（邮局）才能把分组（包裹）往正确的地址传送</description>
     </item>
     
     <item>
@@ -150,15 +87,6 @@ Mo&amp;rsquo;s Blog at GitHub
     </item>
     
     <item>
-      <title>神经网络</title>
-      <link>https://zcy2875634712.github.io/posts/note/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/note/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</guid>
-      <description>神经元 一个神经元的功能是求得输入向量与权向量的内积后加偏置，经一个非线性传递函数得到一个标量结果。</description>
-    </item>
-    
-    <item>
       <title>软件工程导论</title>
       <link>https://zcy2875634712.github.io/posts/note/other/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AF%BC%E8%AE%BA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -168,27 +96,6 @@ Mo&amp;rsquo;s Blog at GitHub
 软件工程七条基本原理 1.用分阶段的生命周期计划严格管理 2.坚持进行阶段评审 3.实行严格的产品控制 4.采用现代程序设计技术 5.结果应能清楚地审查 6.开发小组的人员应该少而精 7.承认不断改进软件工程实践的必要性 软件工程方法学 技术方法的集合称为方法学（范型）。分为传统方法学和面向对象方法学 软件工程方法学包括3个要素：方法、工具和过程 传统方法学（生命周期方法学或结构化范型） 优点 把软件生命周期划分成若干相对独立、简单的阶段，便于不同人员分工协作，降低开发的困难程度 开发过程中采用科学的管理技术和良好的技术方法，且在每个阶段结束之前都进行严格的审查，保证了软件的质量，提高了软件的可维护性 大大提高了软件开发的成功率和生产率 缺点 不适用于软件规模庞大、或者对软件的需求是模糊的或会随时间变化而变化的情况 结构化范型技术把数据和操作人为地分离成两个独立的部分，增加了软件开发与维护的难度
 面向对象方法学 与传统方法学的对比 a．传统方法学强调自顶向下、逐层分解、顺序开发 b．面向对象方法学强调主动地多次反复迭代地开发，保证了在各项开发活动之间的平滑过渡 优点 a．降低了软件产品的复杂性 b．提高了软件的可理解性 c．简化了软件的开发和维护工作 d．提高了软件的可重用性
 软件过程 定义：软件过程是为了获得高质量软件所需要完成的一系列任务的框架，它规定了完成各项任务的工作步骤 表示：使用生命周期模型简洁地描述软件过程 瀑布模型 快速原型模型 增量模型 螺旋模型 喷泉模型 软件周期 1.问题定义: 必须回答的关键问题是， “要解决的问题是什么? ”。 2.可行性研究: 阶段回答的关键问题是: “对于上一个阶段所确定的问题有行得通的解决办法吗? ” 3.</description>
-    </item>
-    
-    <item>
-      <title>速查</title>
-      <link>https://zcy2875634712.github.io/posts/note/go/%E9%80%9F%E6%9F%A5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/note/go/%E9%80%9F%E6%9F%A5/</guid>
-      <description>Variables:
-goCopy codevar name string = &amp;#34;John&amp;#34; age := 30 // type inferred as int var ( city string = &amp;#34;New York&amp;#34; zipCode int = 10001 ) Data Types:
-goCopy codebool string int, int8, int16, int32, int64 uint, uint8, uint16, uint32, uint64, uintptr byte (alias for uint8) rune (alias for int32) float32, float64 complex64, complex128 Constants:
-goCopy codeconst pi = 3.14 const ( monday = &amp;#34;Monday&amp;#34; tuesday = &amp;#34;Tuesday&amp;#34; ) Control Structures:</description>
-    </item>
-    
-    <item>
-      <title>速查</title>
-      <link>https://zcy2875634712.github.io/posts/note/python/%E9%80%9F%E6%9F%A5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zcy2875634712.github.io/posts/note/python/%E9%80%9F%E6%9F%A5/</guid>
-      <description>基本语法 # 输出到控制台 print(&amp;#34;Hello, world!&amp;#34;) # 定义变量 x = 42 y = &amp;#34;Python&amp;#34; # 条件语句 if x &amp;gt; 0: print(&amp;#34;x is positive&amp;#34;) elif x == 0: print(&amp;#34;x is zero&amp;#34;) else: print(&amp;#34;x is negative&amp;#34;) # 循环 for i in range(10): print(i) # 列表 fruits = [&amp;#34;apple&amp;#34;, &amp;#34;banana&amp;#34;, &amp;#34;cherry&amp;#34;] print(fruits[0]) # 输出 &amp;#34;apple&amp;#34; print(len(fruits)) # 输出 3 # 字典 person = {&amp;#34;name&amp;#34;: &amp;#34;John&amp;#34;, &amp;#34;age&amp;#34;: 30} print(person[&amp;#34;name&amp;#34;]) # 输出 &amp;#34;John&amp;#34; print(person.get(&amp;#34;gender&amp;#34;, &amp;#34;unknown&amp;#34;)) # 输出 &amp;#34;unknown&amp;#34; # 函数 def greet(name): print(&amp;#34;Hello, &amp;#34; + name + &amp;#34;!</description>
     </item>
     
   </channel>
